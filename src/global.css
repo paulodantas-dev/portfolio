@@ -35,8 +35,8 @@ body {
 }
 
 @tailwind base;
-  .slide {
-    @apply h-[24rem];
-  }
+.slide {
+  @apply h-[24rem];
+}
 @tailwind components;
 @tailwind utilities;
