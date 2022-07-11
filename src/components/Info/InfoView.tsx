@@ -1,5 +1,7 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { MdMail, MdOutlineVerticalAlignBottom, MdEmail } from 'react-icons/md';
+import { MdOutlineVerticalAlignBottom, MdEmail } from 'react-icons/md';
+
+import { CONSTANTS } from 'utils/Constants';
 
 import Profile from 'assets/Profile.jpeg';
 
@@ -8,7 +10,7 @@ export const InfoView = (): JSX.Element => {
     <div className="w-full">
       <div className="flex justify-center items-center flex-col gap-8">
         <div className="flex items-center justify-center gap-8">
-          <div className="border-2 border-white rounded-full p-2 h-48 w-80 relative">
+          <div className="border-2 border-amber-500 rounded-full p-2 h-48 w-80 relative">
             <img className="w-full h-full rounded-full" src={Profile} alt="Profile" />
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">
@@ -18,10 +20,13 @@ export const InfoView = (): JSX.Element => {
             <p className="text-slate-100 text-center text-xl leading-8 font-extralight">
               Full Stack developer
             </p>
-            <div className="w-full flex justify-evenly items-center mt-4">
-              <FaGithub className="text-amber-500 text-4xl cursor-pointer hover:text-slate-100" />
-              <MdMail className="text-amber-500 text-4xl cursor-pointer hover:text-slate-100" />
-              <FaLinkedin className="text-amber-500 text-4xl cursor-pointer hover:text-slate-100" />
+            <div className="w-full flex justify-center gap-8 items-center mt-4">
+              <a href={CONSTANTS.GITHUB} target="_blank" rel="noreferrer">
+                <FaGithub className="text-amber-500 text-4xl cursor-pointer hover:text-slate-100" />
+              </a>
+              <a href={CONSTANTS.LINKEDIN} target="_blank" rel="noreferrer">
+                <FaLinkedin className="text-amber-500 text-4xl cursor-pointer hover:text-slate-100" />
+              </a>
             </div>
           </div>
         </div>
