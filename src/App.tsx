@@ -1,29 +1,24 @@
 import { BrowserRouter } from 'react-router-dom';
 
 import { Footer } from 'components/Footer/Footer';
-import { Navbar } from 'components/Navbar/Navbar';
-import { ToogleTheme } from 'components/ToogleTheme/ToogleTheme';
-
-import { useTheme } from 'hooks/useTheme/useTheme';
+import { Info } from 'components/Info/Info';
+import { Options } from 'components/Options/Options';
 
 import { Routes } from './routes/routes';
 
 export const App = (): JSX.Element => {
-  const { theme, toggleTheme } = useTheme();
   return (
-    <BrowserRouter>
-      <div className="w-screen h-screen relative flex flex-col justify-between dark:bg-slate-900 bg-slate-100 text-slate-900 dark:text-slate-100">
-        <header className="w-full h-16">
-          <Navbar />
-        </header>
-        <main className="w-full flex-grow">
-          <Routes />
-        </main>
-        <footer className="w-full">
+    <div className="bg-slate-900 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-900 h-screen">
+      <BrowserRouter>
+        <div className="max-w-2xl mx-auto h-full w-full py-10 px-8 flex flex-col gap-12">
+          <Info />
+          <Options />
+          <main className="flex-grow">
+            <Routes />
+          </main>
           <Footer />
-        </footer>
-        <ToogleTheme theme={theme} toggleTheme={toggleTheme} />
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 };

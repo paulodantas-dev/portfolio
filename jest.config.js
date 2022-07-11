@@ -13,6 +13,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/main.tsx',
+    '!src/utils/Constants.ts',
     '!src/routes/routes.tsx',
     '!src/App.tsx',
     '!src/**/*.types.{js,jsx,ts,tsx}',
@@ -28,6 +29,7 @@ module.exports = {
   },
   moduleNameMapper: {
     '\\.(jpg|ico|jpeg|png|svg)$': '<rootDir>/config/mocks/fileMock.ts',
+    '\\.(css|less)$': '<rootDir>/config/mocks/cssMock.ts',
   },
   reporters: [
     'default',
