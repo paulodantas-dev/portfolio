@@ -9,18 +9,21 @@
     "dev": "vite",
     "start": "vite preview ",
     "build": "tsc && vite build",
-    "test": "jest",
     "coverage": "jest --coverage",
+    "test": "jest",
     "prepare": "husky install",
     "format": "prettier --write --ignore-unknown .",
     "lint": "eslint --fix ./src"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-hook-form": "^7.33.1",
     "react-icons": "^4.3.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.5"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",

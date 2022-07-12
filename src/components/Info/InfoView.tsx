@@ -1,16 +1,19 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdOutlineVerticalAlignBottom, MdEmail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import { CONSTANTS } from 'utils/Constants';
 
 import Profile from 'assets/Profile.jpeg';
 
-export const InfoView = (): JSX.Element => {
+import { IInfo } from './Info.types';
+
+export const InfoView = ({ handleModalContact }: IInfo): JSX.Element => {
   return (
     <div className="w-full">
       <div className="flex justify-center items-center flex-col gap-8">
         <div className="flex items-center justify-center gap-8">
-          <div className="border-2 border-amber-500 rounded-full p-2 h-48 w-80 relative">
+          <div className="border-2 border-amber-500 rounded-full p-2 h-48 w-80">
             <img className="w-full h-full rounded-full" src={Profile} alt="Profile" />
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-2">
@@ -31,11 +34,19 @@ export const InfoView = (): JSX.Element => {
           </div>
         </div>
         <div className="w-full flex items-center justify-center gap-8">
-          <button className="group py-4 px-8 bg-amber-500 hover:bg-slate-800 hover:text-amber-500 rounded-3xl flex items-center gap-2 font-medium text-xl leading-8 transition duration-150 ease-out">
+          <Link
+            className="group cursor-pointer py-4 px-8 bg-amber-500 hover:bg-slate-800 hover:text-amber-500 rounded-3xl flex items-center gap-2 font-medium text-xl leading-8 transition duration-150 ease-out"
+            to="/paulo_dantas_US.pdf"
+            target="_blank"
+            download
+          >
             Download CV
             <MdOutlineVerticalAlignBottom className="text-2xl group-hover:text-amber-500" />
-          </button>
-          <button className="group py-4 px-8 bg-slate-800 hover:bg-amber-500 text-amber-500 hover:text-slate-900 rounded-3xl flex items-center gap-2 font-medium text-xl leading-8 transition duration-150 ease-out">
+          </Link>
+          <button
+            onClick={handleModalContact}
+            className="group cursor-pointer py-4 px-8 bg-slate-800 hover:bg-amber-500 text-amber-500 hover:text-slate-900 rounded-3xl flex items-center gap-2 font-medium text-xl leading-8 transition duration-150 ease-out"
+          >
             Contact me
             <MdEmail className="text-2xl text-amber-500 group-hover:text-slate-900 " />
           </button>
