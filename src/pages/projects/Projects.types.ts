@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 export interface IStack {
   id: string;
   name: string;
@@ -14,6 +12,7 @@ export interface ILanguage {
 export interface IProject {
   id: string;
   name: string;
+  category: string;
   title: string;
   brief: string;
   concluded: string;
@@ -24,6 +23,6 @@ export interface IProject {
 
 export interface IProjects {
   projects: IProject[];
-  renderArrowNext: (clickHandler: () => void, hasNext: boolean) => ReactNode;
-  renderArrowPrev: (clickHandler: () => void, hasPrev: boolean) => ReactNode;
+  menu: string[];
+  filterProjects: (category: string) => void;
 }

@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
-import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
+import { useState } from 'react';
 
 import ProjectsData from 'utils/ProjectsData.json';
 
@@ -7,43 +6,20 @@ import { IProject } from './Projects.types';
 import { ProjectsView } from './ProjectsView';
 
 const Projects = (): JSX.Element => {
-  const [project, setProject] = useState<IProject[]>([]);
+  const allCategories = ['All', ...new Set(ProjectsData.map((item) => item.category))];
+  const [project, setProject] = useState<IProject[]>(ProjectsData);
+  const [menu] = useState<string[]>(allCategories);
 
-  useEffect(() => {
-    setProject(ProjectsData);
-  }, []);
+  const filterProjects = (category: string) => {
+    if (category === 'All') {
+      return setProject(ProjectsData);
+    }
 
-  const renderArrowNext = useCallback((clickHandler: () => void, hasNext: boolean) => {
-    return (
-      <button
-        className="flex items-center justify-center absolute bottom-0 right-0 z-10"
-        onClick={clickHandler}
-        disabled={!hasNext}
-      >
-        <FaChevronCircleRight className="text-amber-500 text-4xl transition-colors hover:text-slate-800" />
-      </button>
-    );
-  }, []);
+    const filteredData = ProjectsData.filter((item) => item.category === category);
+    setProject(filteredData);
+  };
 
-  const renderArrowPrev = useCallback((clickHandler: () => void, hasPrev: boolean) => {
-    return (
-      <button
-        className="flex items-center justify-center absolute bottom-0 left-0 z-10 "
-        onClick={clickHandler}
-        disabled={!hasPrev}
-      >
-        <FaChevronCircleLeft className="text-amber-500 text-4xl transition-colors hover:text-slate-800" />
-      </button>
-    );
-  }, []);
-
-  return (
-    <ProjectsView
-      projects={project}
-      renderArrowNext={renderArrowNext}
-      renderArrowPrev={renderArrowPrev}
-    />
-  );
+  return <ProjectsView projects={project} menu={menu} filterProjects={filterProjects} />;
 };
 
 export default Projects;

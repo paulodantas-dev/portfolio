@@ -1,15 +1,10 @@
 import { render, screen } from '@testing-library/react';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IProjects } from '../Projects.types';
 import { ProjectsView } from '../ProjectsView';
 
-jest.mock('react-responsive-carousel', () => ({
-  Carousel: jest.fn(() => (
-    <div>
-      <div>teste title</div>
-    </div>
-  )),
+jest.mock('react-router-dom', () => ({
+  Link: jest.fn(() => <div>Link</div>),
 }));
 
 describe('ProjectsView', () => {
@@ -19,6 +14,51 @@ describe('ProjectsView', () => {
         id: '1',
         name: 'test',
         title: 'teste title',
+        category: 'All',
+        brief: 'teste brief',
+        concluded: '90',
+        language: [
+          {
+            id: '1',
+            name: 'teste language',
+            porcentage: '90',
+          },
+        ],
+        description: 'teste description',
+        stack: [
+          {
+            id: '1',
+            name: 'teste stack',
+          },
+        ],
+      },
+      {
+        id: '2',
+        name: 'test',
+        title: 'teste title',
+        category: 'React',
+        brief: 'teste brief',
+        concluded: '90',
+        language: [
+          {
+            id: '1',
+            name: 'teste language',
+            porcentage: '90',
+          },
+        ],
+        description: 'teste description',
+        stack: [
+          {
+            id: '1',
+            name: 'teste stack',
+          },
+        ],
+      },
+      {
+        id: '3',
+        name: 'test',
+        title: 'teste title',
+        category: 'Node',
         brief: 'teste brief',
         concluded: '90',
         language: [
@@ -37,11 +77,12 @@ describe('ProjectsView', () => {
         ],
       },
     ],
-    renderArrowNext: () => <div>Next</div>,
-    renderArrowPrev: () => <div>Prev</div>,
+    menu: ['All', 'JavaScript', 'TypeScript', 'React', 'NodeJS'],
+    filterProjects: jest.fn(),
   } as IProjects;
+
   it('should render correctly', () => {
     render(<ProjectsView {...defaultProps} />);
-    expect(screen.getByText(defaultProps.projects[0].title)).toBeInTheDocument();
+    expect(screen.getByText('All')).toBeInTheDocument();
   });
 });

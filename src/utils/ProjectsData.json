@@ -2,8 +2,10 @@
   {
     "id": "1",
     "name": "Project 1",
+    "category": "React",
     "title": "M.E.R.N Stack",
     "concluded": "100",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1657669894/1_cxsjax.png",
     "brief": "This is a brief description of the project 1,This is a brief description of the project 1, This is a brief description of the project 1",
     "language": [
       {
@@ -33,6 +35,7 @@
   {
     "id": "2",
     "name": "Project 1",
+    "category": "nodeJS",
     "concluded": "90",
     "title": "M.E.R.N Stack",
     "brief": "This is a brief description of the project 1",
@@ -64,6 +67,7 @@
   {
     "id": "3",
     "name": "Project 1",
+    "category": "nodeJS",
     "concluded": "80",
     "title": "M.E.R.N Stack",
     "brief": "This is a brief description of the project 1",
@@ -95,6 +99,7 @@
   {
     "id": "4",
     "name": "Project 1",
+    "category": "React",
     "title": "M.E.R.N Stack",
     "concluded": "70",
     "brief": "This is a brief description of the project 1",
@@ -126,6 +131,7 @@
   {
     "id": "5",
     "name": "Project 1",
+    "category": "mern",
     "concluded": "20",
     "title": "M.E.R.N Stack",
     "brief": "This is a brief description of the project 1",
@@ -145,6 +151,7 @@
   {
     "id": "6",
     "name": "Project 1",
+    "category": "React",
     "title": "M.E.R.N Stack",
     "concluded": "2",
     "brief": "This is a brief description of the project 1",
