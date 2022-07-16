@@ -23,8 +23,18 @@ export interface IProject {
   libs: ILib[];
 }
 
-export interface IProjects {
-  projects: IProject[];
-  menu: string[];
-  filterProjects: (category: string) => void;
+export interface IProjectView {
+  dataPie: IPieChart;
+  project: IProject | undefined;
+}
+
+export interface IPieChart {
+  labels: string[] | undefined;
+  datasets: {
+    label: string;
+    data: number[] | undefined;
+    backgroundColor: string[];
+    borderColor: string[];
+    borderWidth: number;
+  }[];
 }

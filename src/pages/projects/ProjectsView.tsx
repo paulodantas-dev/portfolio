@@ -6,9 +6,9 @@ export const ProjectsView = ({ projects, menu, filterProjects }: IProjects): JSX
   return (
     <section className="w-full relative">
       <div className="flex items-center justify-center gap-8 mb-8">
-        {menu.map((category, index) => (
+        {menu.map((category) => (
           <button
-            key={index}
+            key={category}
             type="button"
             onClick={() => filterProjects(category)}
             className="text-amber-500 hover:underline uppercase hover:text-slate-100 font-light text-xl"

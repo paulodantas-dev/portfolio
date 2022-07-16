@@ -11,23 +11,35 @@ jest.mock('react-router-dom', () => ({
 describe('ProjectCard', () => {
   const defaultProps = {
     project: {
-      id: '1',
-      name: 'test',
-      title: 'teste title',
-      brief: 'teste brief',
-      concluded: '90',
-      language: [
+      id: 1,
+      category: 'NodeJS',
+      live: 'site.com',
+      code: 'site.com',
+      doc: 'site.com',
+      title: 'titile 1',
+      subTitle: 'sub tile 1',
+      thumbnail: 'url image 1',
+      languages: [
         {
-          id: '1',
-          name: 'teste language',
-          porcentage: '90',
+          id: 1,
+          name: 'javascript',
+          porcentage: 10,
+        },
+        {
+          id: 2,
+          name: 'nodejs',
+          porcentage: 90,
         },
       ],
-      description: 'teste description',
-      stack: [
+      description: 'description 1',
+      libs: [
         {
-          id: '1',
-          name: 'teste stack',
+          id: 1,
+          name: 'express',
+        },
+        {
+          id: 1,
+          name: 'cors',
         },
       ],
     },

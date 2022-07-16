@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 
 import Projects from '../Projects';
 import { ProjectsView } from '../ProjectsView';
@@ -13,13 +13,12 @@ describe('Projects', () => {
     expect(ProjectsView).toBeDefined();
   });
 
-  it('should work correctly function filterProjects', () => {
+  it('should render correctly function filterProjects', () => {
+    const menu = ['All', 'NodeJS'];
     render(<Projects />);
-
-    fireEvent.click(screen.getByText('All'));
-    expect(screen.getByText('All')).toBeInTheDocument();
-
-    fireEvent.click(screen.getByText('React'));
-    expect(screen.getByText('React')).toBeInTheDocument();
+    menu.forEach((item) => {
+      fireEvent.click(screen.getByText(item));
+      expect(screen.getByText(item)).toBeInTheDocument();
+    });
   });
 });
