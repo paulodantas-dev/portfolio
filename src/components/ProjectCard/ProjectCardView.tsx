@@ -1,3 +1,4 @@
+import { MdBuildCircle } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 import { IProjectCard } from './ProjectCard.types';
@@ -5,12 +6,13 @@ import { IProjectCard } from './ProjectCard.types';
 export const ProjectCardView = ({ project }: IProjectCard): JSX.Element => {
   return (
     <div className="h-72 w-full bg-slate-800 relative rounded-xl overflow-hidden">
-      <div className="relative p-2">
-        <img
-          className="rounded-full h-full w-full object-cover"
-          src="https://res.cloudinary.com/paulodantas/image/upload/v1657669894/1_cxsjax.png"
-          alt="avatar"
-        />
+      {project.building && (
+        <div className="absolute top-0 left-0 bg-amber-500 rounded-full">
+          <MdBuildCircle className="text-2xl" />
+        </div>
+      )}
+      <div className="p-2 h-36">
+        <img className="h-full w-full object-cover" src={project.thumbnail} alt={project.title} />
       </div>
       <div className="w-full h-28 flex gap-2 flex-col items-center justify-center rounded bg-slate-900 absolute bottom-4 left-0">
         <h2 className="text-sm text-amber-500 mb-0.5">{project.title}</h2>

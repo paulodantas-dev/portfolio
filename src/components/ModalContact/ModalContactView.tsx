@@ -12,8 +12,8 @@ export const ModalContactView = ({
   handleChange,
 }: IModalContact) => {
   return (
-    <div className="bg-black/80 absolute top-0 left-0 w-screen h-screen flex items-center justify-center">
-      <div className="relative h-96 w-96 bg-slate-900 shadow-xl rounded">
+    <div className="bg-black/80 absolute top-0 left-0 w-screen h-screen flex items-center justify-center z-20">
+      <div className="relative bg-slate-900 shadow-xl rounded">
         <div className="absolute top-4 right-4 cursor-pointer">
           <MdOutlineClose className="text-2xl text-amber-500" onClick={handleModalContact} />
         </div>

@@ -12,6 +12,7 @@ export interface ILanguage {
 export interface IProject {
   id: number;
   category: string;
+  building: boolean;
   live: string;
   code: string;
   doc: string;

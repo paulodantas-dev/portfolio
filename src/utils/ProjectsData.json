@@ -1,13 +1,121 @@
 [
   {
     "id": 1,
+    "category": "ReactJS",
+    "building": false,
+    "live": "https://portfolio-paulodantas-dev.vercel.app/",
+    "code": "https://github.com/paulodantas-dev/portfolio",
+    "doc": "https://github.com/paulodantas-dev/portfolio#readme",
+    "title": "portfolio",
+    "subTitle": "with ReactJS + Tailwind",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658073072/Screenshot_from_2022-07-17_12-51-04_gdvnlw.png",
+    "languages": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "porcentage": 93.6
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "porcentage": 3.7
+      },
+      {
+        "id": 3,
+        "name": "HTML",
+        "porcentage": 1.4
+      },
+      {
+        "id": 4,
+        "name": "CSS",
+        "porcentage": 1.2
+      },
+      {
+        "id": 3,
+        "name": "Shell",
+        "porcentage": 0.1
+      }
+    ],
+    "description": "I have perfected Portfolio. Includes the following features: Download CV, Contact form with validation. About me page, work page and Project Page.",
+    "libs": [
+      { "id": 1, "name": "@emailjs/browser" },
+      { "id": 2, "name": "chart.js" },
+      { "id": 3, "name": "react-dom" },
+      { "id": 4, "name": "react" },
+      { "id": 5, "name": "react-router-dom" },
+      { "id": 6, "name": "react-chartjs-2" },
+      { "id": 7, "name": "@reduxjs/toolkit" },
+      { "id": 8, "name": "tailwindcss" },
+      { "id": 9, "name": "vite" },
+      { "id": 10, "name": "react-toastify" },
+      { "id": 11, "name": "jest" },
+      { "id": 12, "name": "testing-library" }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "ReactJS",
+    "building": true,
+    "live": "https://auth-app-node.herokuapp.com/",
+    "code": "https://github.com/paulodantas-dev/auth-client",
+    "doc": "https://github.com/paulodantas-dev/auth-client#readme",
+    "title": "auth-client",
+    "subTitle": "with ReactJS + Redux + Tailwind",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1657669894/1_cxsjax.png",
+    "languages": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "porcentage": 94.1
+      },
+      {
+        "id": 2,
+        "name": "Html",
+        "porcentage": 2.0
+      },
+      {
+        "id": 3,
+        "name": "Shell",
+        "porcentage": 0.3
+      },
+      {
+        "id": 4,
+        "name": "Css",
+        "porcentage": 2.4
+      },
+      {
+        "id": 3,
+        "name": "JavaScript",
+        "porcentage": 1.2
+      }
+    ],
+    "description": "I have perfected the user authentication page using React + Redux. Include: Register, login with validation form. Forgot password, reset password and register a new account by Email verification. Update personal information (name, password and avatar) Change permissions and delete user accounts with Admin.",
+    "libs": [
+      { "id": 1, "name": "axios" },
+      { "id": 2, "name": "react" },
+      { "id": 3, "name": "react-dom" },
+      { "id": 4, "name": "react-icons" },
+      { "id": 5, "name": "react-router-dom" },
+      { "id": 6, "name": "react-redux" },
+      { "id": 7, "name": "@reduxjs/toolkit" },
+      { "id": 8, "name": "tailwindcss" },
+      { "id": 9, "name": "vite" },
+      { "id": 10, "name": "react-toastify" },
+      { "id": 11, "name": "@hookform/resolvers" },
+      { "id": 12, "name": "react-hook-form" },
+      { "id": 13, "name": "yup" }
+    ]
+  },
+  {
+    "id": 3,
     "category": "NodeJS",
+    "building": false,
     "live": "https://auth-app-node.herokuapp.com/",
     "code": "https://github.com/paulodantas-dev/auth-server",
     "doc": "https://auth-app-node.herokuapp.com/api/doc/",
     "title": "auth-server-api",
     "subTitle": "with NodeJS + Express + MongoDB",
-    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1657669894/1_cxsjax.png",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658071721/Screenshot_from_2022-07-17_12-27-45_ato4aq.png",
     "languages": [
       {
         "id": 1,
@@ -40,11 +148,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
