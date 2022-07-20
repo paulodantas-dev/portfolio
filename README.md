@@ -128,12 +128,13 @@ const handleSubmit = useCallback((e: FormEvent<HTMLFormElement>): void => {
 
 How structure folder looks like
 
+```javascript
 /////.../////
 --- src
 ----components
 /////.../////
 -----ProjectCard
-------**tests**
+------__tests__
 -------ProjectCard.test.tsx
 -------ProjectCardView.test.tsx
 ------ProjectCard.tsx
@@ -145,7 +146,7 @@ How structure folder looks like
 ----pages
 /////.../////
 -----project
-------**tests**
+------__tests__
 -------Project.test.tsx
 -------ProjectView.test.tsx
 ------Project.tsx
@@ -155,6 +156,62 @@ How structure folder looks like
 ------Project.styles.ts
 ------ProjectView.styles.ts
 /////.../////
+```
+
+How to configure jest to run tests in the project
+
+```javascript
+{
+  clearMocks: true,
+  roots: ['<rootDir>/src'],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/jestSetup.ts'],
+  testEnvironment: 'jest-environment-jsdom',
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
+  testRegex: '((\\.|/*.)(test))\\.[tj]sx?$',
+  moduleDirectories: ['node_modules', './src'],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['cobertura', 'html', 'lcov', 'text-summary', 'text'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/main.tsx',
+    '!src/utils/Constants.ts',
+    '!src/routes/routes.tsx',
+    '!src/App.tsx',
+    '!src/**/*.types.{js,jsx,ts,tsx}',
+    '!src/**/*.d.ts',
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      lines: 90,
+      functions: 90,
+      statements: 90,
+    },
+  },
+  moduleNameMapper: {
+    '\\.(jpg|ico|jpeg|png|svg)$': '<rootDir>/config/mocks/fileMock.ts',
+    '\\.(css|less)$': '<rootDir>/config/mocks/cssMock.ts',
+  },
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        suiteName: 'jest tests',
+        outputDirectory: './coverage/',
+        outputName: 'junit.xml',
+        classNameTemplate: '{classname} - {title}',
+        titleTemplate: '{classname} - {title}',
+        ancestorSeparator: ' > ',
+        usePathForSuiteName: 'true',
+      },
+    ],
+  ],
+  preset: 'ts-jest',
+  coverageProvider: 'v8',
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
+}
+```
 
 ## Screenshots
 
