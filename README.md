@@ -1,4 +1,3 @@
-
 # portfolio
 
 APP - https://portfolio-paulodantas-dev.vercel.app/
@@ -46,6 +45,7 @@ How to execute tests the project in LOCALHOST
 ```bash
     yarn test / npm run test
 ```
+
 ### To execute one coverage
 
 ```bash
@@ -98,42 +98,42 @@ How to send Email from contact form
 
 ```javascript
 const handleSubmit = useCallback((e: FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    setIsLoading(true);
-    try {
-      sendForm(
-        'service_cw9wqke',
-        'template_itd9yba',
-        formRef.current || '',
-        'N_TbVot3s9W8-Wdnw'
-      ).then(
-        (result) => {
-          if (result.status === 200) {
-            setIsModalContact(false);
-            setIsLoading(false);
-            toast.success('Message sent!');
-          }
-        },
-        (error) => {
+  e.preventDefault();
+  setIsLoading(true);
+  try {
+    sendForm(
+      'service_cw9wqke',
+      'template_itd9yba',
+      formRef.current || '',
+      'N_TbVot3s9W8-Wdnw'
+    ).then(
+      (result) => {
+        if (result.status === 200) {
+          setIsModalContact(false);
           setIsLoading(false);
-          toast.error(error.text);
+          toast.success('Message sent!');
         }
-      );
-    } catch (error) {
-      setIsLoading(false);
-      alert(error);
-    }
-  }, []);
+      },
+      (error) => {
+        setIsLoading(false);
+        toast.error(error.text);
+      }
+    );
+  } catch (error) {
+    setIsLoading(false);
+    alert(error);
+  }
+}, []);
 ```
 
-How  structure folder looks like
+How structure folder looks like
 
 /////.../////
 --- src
 ----components
 /////.../////
 -----ProjectCard
-------__tests__
+------**tests**
 -------ProjectCard.test.tsx
 -------ProjectCardView.test.tsx
 ------ProjectCard.tsx
@@ -145,7 +145,7 @@ How  structure folder looks like
 ----pages
 /////.../////
 -----project
-------__tests__
+------**tests**
 -------Project.test.tsx
 -------ProjectView.test.tsx
 ------Project.tsx
@@ -156,11 +156,9 @@ How  structure folder looks like
 ------ProjectView.styles.ts
 /////.../////
 
-
 ## Screenshots
 
 ![App Screenshot1](https://github.com/paulodantas-dev/auth-client/blob/main/src/assets/1.png)
-
 
 ## Feedback
 
