@@ -109,12 +109,135 @@
   {
     "id": 3,
     "category": "NodeJS",
-    "building": false,
+    "building": true,
     "live": "https://auth-app-node.herokuapp.com/",
     "code": "https://github.com/paulodantas-dev/auth-server",
     "doc": "https://auth-app-node.herokuapp.com/api/doc/",
     "title": "auth-server-api",
+    "subTitle": "with NodeJS + Express + EmailJS + MongoDB",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658071721/Screenshot_from_2022-07-17_12-27-45_ato4aq.png",
+    "languages": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "porcentage": 98.7
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "porcentage": 1.2
+      },
+      {
+        "id": 3,
+        "name": "Procfile",
+        "porcentage": 0.1
+      }
+    ],
+    "description": "I have perfected the user authentication NodeJS Server. Includes the following features: Register, login with validation form. Forgot password, reset password and register a new account by Email verification. Update personal information (name, password and avatar) Change permissions and delete user accounts with Admin. ",
+    "libs": [
+      { "id": 1, "name": "bcrypt" },
+      { "id": 2, "name": "body-parser" },
+      { "id": 3, "name": "cookie-parser" },
+      { "id": 4, "name": "cors" },
+      { "id": 5, "name": "express" },
+      { "id": 6, "name": "dotenv" },
+      { "id": 7, "name": "jsonwebtoken" },
+      { "id": 8, "name": "mongoose" },
+      { "id": 9, "name": "swagger-ui-express" },
+      { "id": 10, "name": "typescript" }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "NodeJS",
+    "building": true,
+    "live": "https://instant-server-api.herokuapp.com/",
+    "code": "https://github.com/paulodantas-dev/instant-app-server",
+    "doc": "https://instant-server-api.herokuapp.com/api/doc/",
+    "title": "instant-server-api",
     "subTitle": "with NodeJS + Express + MongoDB",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658071721/Screenshot_from_2022-07-17_12-27-45_ato4aq.png",
+    "languages": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "porcentage": 98.7
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "porcentage": 1.2
+      },
+      {
+        "id": 3,
+        "name": "Procfile",
+        "porcentage": 0.1
+      }
+    ],
+    "description": "I have perfected the user authentication NodeJS Server. Includes the following features: Register, login with validation form. Forgot password, reset password and register a new account by Email verification. Update personal information (name, password and avatar) Change permissions and delete user accounts with Admin. ",
+    "libs": [
+      { "id": 1, "name": "bcrypt" },
+      { "id": 2, "name": "body-parser" },
+      { "id": 3, "name": "cookie-parser" },
+      { "id": 4, "name": "cors" },
+      { "id": 5, "name": "express" },
+      { "id": 6, "name": "dotenv" },
+      { "id": 7, "name": "jsonwebtoken" },
+      { "id": 8, "name": "mongoose" },
+      { "id": 9, "name": "swagger-ui-express" },
+      { "id": 10, "name": "typescript" }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "ReactJS",
+    "building": true,
+    "live": "https://instant-app-client.vercel.app/",
+    "code": "https://github.com/paulodantas-dev/instant-app-client",
+    "doc": "https://github.com/paulodantas-dev/instant-app-client/blob/master/README.md",
+    "title": "instant-app",
+    "subTitle": "with ReactJS + Redux + Material Ui",
+    "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658071721/Screenshot_from_2022-07-17_12-27-45_ato4aq.png",
+    "languages": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "porcentage": 98.7
+      },
+      {
+        "id": 2,
+        "name": "JavaScript",
+        "porcentage": 1.2
+      },
+      {
+        "id": 3,
+        "name": "Procfile",
+        "porcentage": 0.1
+      }
+    ],
+    "description": "I have perfected the user authentication NodeJS Server. Includes the following features: Register, login with validation form. Forgot password, reset password and register a new account by Email verification. Update personal information (name, password and avatar) Change permissions and delete user accounts with Admin. ",
+    "libs": [
+      { "id": 1, "name": "bcrypt" },
+      { "id": 2, "name": "body-parser" },
+      { "id": 3, "name": "cookie-parser" },
+      { "id": 4, "name": "cors" },
+      { "id": 5, "name": "express" },
+      { "id": 6, "name": "dotenv" },
+      { "id": 7, "name": "jsonwebtoken" },
+      { "id": 8, "name": "mongoose" },
+      { "id": 9, "name": "swagger-ui-express" },
+      { "id": 10, "name": "typescript" }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "NextJS",
+    "building": true,
+    "live": "https://auth-app-node.herokuapp.com/",
+    "code": "https://github.com/paulodantas-dev/auth-server",
+    "doc": "https://auth-app-node.herokuapp.com/api/doc/",
+    "title": "acaochego-app",
+    "subTitle": "with NextJS + Zustand + GraphQL + GraphCMS + firebase",
     "thumbnail": "https://res.cloudinary.com/paulodantas/image/upload/v1658071721/Screenshot_from_2022-07-17_12-27-45_ato4aq.png",
     "languages": [
       {
