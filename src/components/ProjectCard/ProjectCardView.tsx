@@ -14,7 +14,7 @@ export const ProjectCardView = ({ project }: IProjectCard): JSX.Element => {
       <div className="p-2 h-36">
         <img className="h-full w-full object-cover" src={project.thumbnail} alt={project.title} />
       </div>
-      <div className="w-full h-28 flex gap-2 flex-col items-center justify-center rounded bg-slate-900 absolute bottom-4 left-0">
+      <div className="w-full h-32 md:h-28 flex gap-2 flex-col items-center justify-center rounded bg-slate-900 absolute bottom-4 left-0">
         <h2 className="text-sm text-amber-500 mb-0.5">{project.title}</h2>
         <span className="text-xs text-center font-thin text-slate-100 ">{project.subTitle}</span>
         <Link

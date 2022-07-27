@@ -11,13 +11,13 @@ export const ProjectsView = ({ projects, menu, filterProjects }: IProjects): JSX
             key={category}
             type="button"
             onClick={() => filterProjects(category)}
-            className="text-amber-500 hover:underline uppercase hover:text-slate-100 font-light text-xl"
+            className="text-amber-500 hover:underline uppercase hover:text-slate-100 font-light text-base md:text-xl"
           >
             {category}
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {projects.map((project: IProject) => (
           <ProjectCard key={project.id} project={project} />
         ))}

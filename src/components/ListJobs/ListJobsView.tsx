@@ -10,7 +10,7 @@ export const ListJobsView = ({ work }: IListJobs): JSX.Element => {
           <div className="bg-amber-500 w-8 h-8 p-1 flex items-center justify-center rounded-full -ml-3">
             <RiCalendar2Line className="text-white w-4 h-4" />
           </div>
-          <div className="block p-6 rounded-lg shadow-lg bg-slate-800 max-w-xl  ml-6 mb-10">
+          <div className="block p-6 rounded-lg shadow-lg bg-slate-800 max-w-xl ml-6 mb-10">
             <div className="flex justify-between mb-4 ">
               <div>
                 <h2 className="font-medium text-amber-500 hover:text-amber-500 text-base">

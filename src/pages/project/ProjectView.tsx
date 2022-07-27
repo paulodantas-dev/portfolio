@@ -45,7 +45,7 @@ export const ProjectView = ({ dataPie, project }: IProjectView): JSX.Element => 
           DOC
         </a>
       </div>
-      <div className="flex justify-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center gap-8">
         <div className="flex-1 space-y-6">
           <h2 className="text-xl text-amber-500 uppercase">Languages</h2>
           <PieChart dataPie={dataPie} />

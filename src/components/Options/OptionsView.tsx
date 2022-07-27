@@ -9,10 +9,10 @@ export const OptionsView = ({ isActive }: IOptions): JSX.Element => {
         <div
           className={`${isActive(
             '/works'
-          )} hover:bg-slate-900 rounded-full  w-full transition duration-150 ease-out`}
+          )} hover:bg-slate-900 rounded-full w-full transition duration-150 ease-out`}
         >
           <Link
-            className="text-amber-500 leading-8 p-3 font-medium text-xl w-full cursor-pointer flex justify-center items-center"
+            className="text-amber-500 leading-8 p-3 font-medium text-base md:text-xl w-full cursor-pointer flex justify-center items-center"
             to={'/works'}
           >
             Work
@@ -21,10 +21,10 @@ export const OptionsView = ({ isActive }: IOptions): JSX.Element => {
         <div
           className={`${isActive(
             '/projects'
-          )} hover:bg-slate-900 rounded-full  w-full transition duration-150 ease-out`}
+          )} hover:bg-slate-900 rounded-full w-full transition duration-150 ease-out`}
         >
           <Link
-            className="text-amber-500 leading-8 p-3 font-medium text-xl w-full cursor-pointer flex justify-center items-center"
+            className="text-amber-500 leading-8 p-3 font-medium text-base md:text-xl w-full cursor-pointer flex justify-center items-center"
             to={'/projects'}
           >
             Projects
@@ -36,7 +36,7 @@ export const OptionsView = ({ isActive }: IOptions): JSX.Element => {
           )} hover:bg-slate-900 rounded-full w-full transition duration-150 ease-in-out`}
         >
           <Link
-            className="text-amber-500 leading-8 p-3 font-medium text-xl w-full cursor-pointer flex justify-center items-center"
+            className="text-amber-500 leading-8 p-3 font-medium text-base md:text-xl w-full cursor-pointer flex justify-center items-center"
             to={'/'}
           >
             About

@@ -71,7 +71,7 @@ export const App = (): JSX.Element => {
     <>
       <div className="bg-slate-900 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-900 h-screen relative">
         <BrowserRouter>
-          <div className="max-w-2xl mx-auto h-full w-full py-10 px-8 flex flex-col gap-12">
+          <div className="max-w-sm md:max-w-2xl mx-auto h-full w-full py-4 px-4 flex flex-col gap-12">
             <Info handleModalContact={handleModalContact} />
             <Options />
             <main className="flex-grow">
