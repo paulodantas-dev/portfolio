@@ -221,7 +221,6 @@ How to configure jest to run tests in the project
 ![App Screenshot4](https://github.com/paulodantas-dev/portfolio/blob/main/src/assets/4.png)
 ![App Screenshot5](https://github.com/paulodantas-dev/portfolio/blob/main/src/assets/5.png)
 
-
 ## Feedback
 
 If you have any feedback, please let me know via paulodantasbjr@gmail.com

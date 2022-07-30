@@ -109,7 +109,7 @@
   {
     "id": 3,
     "category": "NodeJS",
-    "building": true,
+    "building": false,
     "live": "https://auth-app-node.herokuapp.com/",
     "code": "https://github.com/paulodantas-dev/auth-server",
     "doc": "https://auth-app-node.herokuapp.com/api/doc/",
