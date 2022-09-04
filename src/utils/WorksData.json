@@ -1,83 +1,47 @@
 [
   {
     "id": "1",
-    "name": "Front-end developer",
+    "name": "Front-End React Developer",
     "level": "Mid",
     "company": "Levva",
-    "from": "04/2022",
-    "to": "at present",
-    "description": "One of responsible for the creation and manutenability of SAT(Oxiteno) using ReactJS, EffectorJS(Global Store), MaterialUi to styles, Jest-Enzyme for UNITS TESTS"
+    "from": "09/2021",
+    "to": "at the moment",
+    "description": "Development of Ambev's B2B (BEES) e-commerce platform, with more than 800,000 customers and R$9 million in turnover in the second quarter of 2021. We use the most recent and adopted technologies and tools for development, quality control, security, as well as agile     methodologies and continuous integration and delivery processes."
   },
   {
     "id": "2",
-    "name": "Front-End React Developer",
+    "name": "Front-End Developer",
     "level": "Junior",
-    "company": "HDN Digital",
-    "from": "09/2021",
-    "to": "04/2022",
-    "description": "One of responsible for manutenability of BEES(Ambev) dashboard e-Commerce using ReactJS, EffectorJS(Global Store), MaterialUi to styles, Jest-Enzyme for UNITS TESTS and Cypress-Cucumber for end-to-end TESTS"
+    "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
+    "from": "03/2021",
+    "to": "09/2021",
+    "description": "Responsible for the creation of the internal site “PITIA”(Previsão inteligente de tipo de abandono) which is responsible for the prediction of abandonment of oil wells. Project made at ReactJS, StyledComponents to styles ContextAPI(GlobalStore)."
   },
   {
     "id": "3",
-    "name": "DevOps",
-    "level": "Mid",
+    "name": "Front-end developer",
+    "level": "Junior",
     "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
-    "from": "02/2021",
-    "to": "08/2021",
-    "description": "Acting in the management of indicators with the Leadership in strategic planning meetings in the preparation and review of documentation of processes, procedures and operational flows. Working on continuous improvement in a consultative way, bringing methods for the development of work."
+    "from": "06/2019",
+    "to": "03/2021",
+    "description": "Experience in reviewing and editing marketing materials and corporate communications - Development of the pipocadigital.com.br/ website in conjunction with the development team."
   },
   {
     "id": "4",
-    "name": "Front-end developer",
-    "level": "Junior",
-    "company": "Solutic",
-    "from": "10/2020",
-    "to": "02/2021",
-    "description": "Responsible for the creation of the internal site “PITIA”(Previsão inteligente de tipo de abandono) which is responsible for the prediction of abandonment of oil wells. Project made at ReactJS, StyledComponents to styles ContextAPI(GlobalStore)"
+    "name": "Systems Development Intern",
+    "level": "Treinee",
+    "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
+    "from": "12/2018",
+    "to": "06/2019",
+    "description": "Responsible for reviewing and editing the federal savings bank website in conjunction with the development team."
   },
   {
     "id": "5",
     "name": "Support analyst",
-    "level": "Junior/Mid",
+    "level": "Junior/Mid/Senior",
     "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
-    "from": "09/2017",
-    "to": "03/2020",
-    "description": "Responsible for the installation, configurations and maintenance of Hardware /Software (Windows 7, Office Applications, Internal Programs at the Regional Labor Court of RJ) • we increased the efficiency in serving the end user by 78%. • built a database with relevant information for faster problem resolution. • Creation of the intranet with the development team to improve the details of the operation both in the field and by telephone"
-  },
-  {
-    "id": "6",
-    "name": "Support analyst",
-    "level": "Junior/Mid",
-    "company": "SOLUTIS TECNOLOGIAS LTDA",
-    "from": "09/2015",
-    "to": "12/2016",
-    "description": "Skills with installations, configurations and maintenance of Hardware / Softwares (Windows 7, Office Applications, Internal Programs at the Federal Regional Court Of RJ); • Above-average performance in attendance by judges in all states of RJ. • responsible for the creation and maintenance of the telephone technical assistance system (PBX)."
-  },
-  {
-    "id": "7",
-    "name": "Support analyst",
-    "level": "Junior",
-    "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
-    "from": "12/2014",
-    "to": "08/2015",
-    "description": "Responsible for reviewing and editing the federal savings bank website in conjunction with the development team. • responsible for carrying out tests in real time. • Survey of requirements for website evolution. • I assisted the team, improving the delivery quality process."
-  },
-  {
-    "id": "8",
-    "name": "Web developer",
-    "level": "Treinee",
-    "company": "KRK MARKETING E COMUNICAÇÃO DIGITAL LTDA",
-    "from": "02/2014",
-    "to": "09/2014",
-    "description": "Experience in reviewing and editing marketing materials and corporate communications - Development of the pipocadigital.com.br/ website in conjunction with the development team. • Creation of the visual identity of the website • Directly responsible for the control of booking sales flow for the carnival of RJ / 2015 • responsible for managing the flow of the website. • Use of wordpress to create the virtual store organization."
-  },
-  {
-    "id": "9",
-    "name": "Support analyst",
-    "level": "Junior",
-    "company": "STEFANINI CONSULTORIA E ASSESSORIA EM INFORMÁTICA S/A",
-    "from": "02/2012",
-    "to": "11/2013",
-    "description": "Responsible for the installation, configurations and maintenance of Hardware /Software (Windows 7, Office Applications, Internal Programs at the TJRJ)"
+    "from": "11/2010",
+    "to": "12/2018",
+    "description": "Responsible for the installation, configurations and maintenance of Hardware / Software (Windows 7, Office Applications, Internal Programs in the public service of the     state of Rio de Janeiro)"
   }
 ]
